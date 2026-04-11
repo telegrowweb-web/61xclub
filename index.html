@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>16X CLUB – AI Forex Signals | Elite Currency Trading | 6K+ Members</title>
-  <meta name="description" content="Join 16X CLUB on Telegram — 6,108 subscribers. AI-powered forex signals, elite currency calls and premium market analysis. Join now!"/>
-  <meta name="keywords" content="16X Club, AI Forex, Forex Signals, Elite Trading, Currency Trading, Market Analysis, Premium Signals"/>
+  <title>16X CLUB – Forex Market | AI Trading Signals | 6K+ Members</title>
+  <meta name="description" content="Join 16X CLUB on Telegram — 6,108 subscribers. AI-powered forex market signals, elite currency analysis and premium trade setups. Join now!"/>
+  <meta name="keywords" content="16X Club, Forex Market, Currency Trading, EUR USD, GBP JPY, XAU USD, Forex Signals"/>
   <meta name="author" content="16X Club"/>
   <meta name="robots" content="index, follow"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://t.me/+_3WtynomYVZjYmY1"/>
-  <meta property="og:title" content="16X CLUB – AI Forex Signals | Elite Trading"/>
+  <meta property="og:title" content="16X CLUB – Forex Market | AI Signals"/>
   <meta property="og:image" content="https://onebyone.site/wp-content/uploads/2026/04/16club.jpg"/>
   <link rel="canonical" href="https://t.me/+_3WtynomYVZjYmY1"/>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 
   <style>
@@ -31,7 +30,6 @@
       --dark2: #0a0a10;
       --bdr:   rgba(201,168,76,0.20);
       --txt:   #f5f0e8;
-      --mut:   #3a2e10;
     }
 
     html, body {
@@ -45,9 +43,9 @@
     .bg {
       position: fixed; inset: 0; z-index: 0; pointer-events: none;
       background:
-        radial-gradient(ellipse at 15% 10%,  rgba(201,168,76,0.14)  0%, transparent 48%),
-        radial-gradient(ellipse at 85% 90%,  rgba(26,86,219,0.12)   0%, transparent 48%),
-        radial-gradient(ellipse at 50% 50%,  rgba(5,5,7,0.97)       0%, transparent 70%);
+        radial-gradient(ellipse at 15% 10%, rgba(201,168,76,0.14) 0%, transparent 48%),
+        radial-gradient(ellipse at 85% 90%, rgba(26,86,219,0.12)  0%, transparent 48%),
+        radial-gradient(ellipse at 50% 50%, rgba(5,5,7,0.97)      0%, transparent 70%);
     }
 
     .hex {
@@ -93,19 +91,42 @@
 
     .particles { position:fixed; inset:0; z-index:0; pointer-events:none; }
     .p { position:absolute; border-radius:50%; animation:pUp linear infinite; opacity:0; }
-    .p1{width:2px;height:2px;background:var(--gold); left:6%; top:22%;animation-duration:8s; animation-delay:0s;}
-    .p2{width:2px;height:2px;background:var(--gold2);left:18%;top:65%;animation-duration:10s;animation-delay:1s;}
-    .p3{width:3px;height:3px;background:var(--gold3);left:30%;top:35%;animation-duration:9s; animation-delay:2s;}
-    .p4{width:2px;height:2px;background:var(--blue3);left:48%;top:75%;animation-duration:11s;animation-delay:.5s;}
+    .p1{width:2px;height:2px;background:var(--gold); left:6%; top:22%;animation-duration:8s;  animation-delay:0s;}
+    .p2{width:2px;height:2px;background:var(--gold2);left:18%;top:65%;animation-duration:10s; animation-delay:1s;}
+    .p3{width:3px;height:3px;background:var(--gold3);left:30%;top:35%;animation-duration:9s;  animation-delay:2s;}
+    .p4{width:2px;height:2px;background:var(--blue3);left:48%;top:75%;animation-duration:11s; animation-delay:.5s;}
     .p5{width:2px;height:2px;background:var(--gold); left:64%;top:18%;animation-duration:8.5s;animation-delay:3s;}
-    .p6{width:2px;height:2px;background:var(--gold2);left:76%;top:80%;animation-duration:10s;animation-delay:1.5s;}
-    .p7{width:3px;height:3px;background:var(--gold3);left:87%;top:44%;animation-duration:9s; animation-delay:2.5s;}
-    .p8{width:2px;height:2px;background:var(--blue3);left:94%;top:28%;animation-duration:11s;animation-delay:0s;}
+    .p6{width:2px;height:2px;background:var(--gold2);left:76%;top:80%;animation-duration:10s; animation-delay:1.5s;}
+    .p7{width:3px;height:3px;background:var(--gold3);left:87%;top:44%;animation-duration:9s;  animation-delay:2.5s;}
+    .p8{width:2px;height:2px;background:var(--blue3);left:94%;top:28%;animation-duration:11s; animation-delay:0s;}
     @keyframes pUp {
       0%{opacity:0;transform:translateY(0) scale(.5);}
       20%{opacity:.7;} 80%{opacity:.3;}
       100%{opacity:0;transform:translateY(-65px) scale(1.2);}
     }
+
+    /* ── TICKER TAPE ── */
+    .tape-wrap {
+      width:100%; max-width:340px;
+      overflow:hidden;
+      border:1px solid rgba(201,168,76,0.15);
+      border-radius:7px;
+      background:rgba(0,0,0,0.30);
+      margin-bottom:10px;
+      animation:fadeUp .4s ease both;
+      flex-shrink:0;
+    }
+    .tape {
+      display:flex; gap:20px; white-space:nowrap;
+      padding:5px 10px;
+      animation:tapeScroll 16s linear infinite;
+    }
+    .ti { display:flex; align-items:center; gap:5px; font-size:9px; font-weight:700; }
+    .ti-p { color:rgba(201,168,76,.5); letter-spacing:.05em; }
+    .ti-v { color:var(--gold2); }
+    .ti-u { color:#4ade80; font-size:8px; }
+    .ti-d { color:#f87171; font-size:8px; }
+    @keyframes tapeScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 
     .page {
       position:relative; z-index:1;
@@ -118,24 +139,14 @@
 
     .hdr {
       display:flex; align-items:center; gap:8px;
-      margin-bottom:12px;
+      margin-bottom:10px;
       animation:fadeUp .5s ease both;
     }
-    .hdr-line {
-      flex:1; height:1px; max-width:44px;
-      background:linear-gradient(90deg,transparent,var(--gold),transparent);
-    }
-    .hdr-txt {
-      font-size:9px; font-weight:700;
-      letter-spacing:.44em; color:var(--gold2);
-      text-transform:uppercase; opacity:.8; white-space:nowrap;
-    }
+    .hdr-line { flex:1; height:1px; max-width:44px; background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+    .hdr-txt { font-size:9px; font-weight:700; letter-spacing:.44em; color:var(--gold2); text-transform:uppercase; opacity:.8; white-space:nowrap; }
 
     .logo-link { text-decoration:none; display:block; }
-    .logo-section {
-      display:flex; flex-direction:column; align-items:center;
-      animation:fadeUp .5s .06s ease both;
-    }
+    .logo-section { display:flex; flex-direction:column; align-items:center; animation:fadeUp .5s .06s ease both; }
     .logo-outer { position:relative; width:112px; height:112px; }
 
     .lr1 {
@@ -146,23 +157,11 @@
         conic-gradient(var(--gold4) 0%,var(--gold) 20%,var(--gold3) 40%,var(--gold2) 60%,var(--blue2) 75%,var(--gold) 88%,var(--gold4) 100%) border-box;
       animation:rSpin 6s linear infinite;
     }
-    .lr2 {
-      position:absolute; inset:-15px; border-radius:50%;
-      border:1px solid rgba(201,168,76,0.15);
-      animation:rSpin 11s linear infinite reverse;
-    }
-    .lr3 {
-      position:absolute; inset:-24px; border-radius:50%;
-      border:1px dashed rgba(201,168,76,0.07);
-      animation:rSpin 17s linear infinite;
-    }
+    .lr2 { position:absolute; inset:-15px; border-radius:50%; border:1px solid rgba(201,168,76,0.15); animation:rSpin 11s linear infinite reverse; }
+    .lr3 { position:absolute; inset:-24px; border-radius:50%; border:1px dashed rgba(201,168,76,0.07); animation:rSpin 17s linear infinite; }
     @keyframes rSpin { to { transform:rotate(360deg); } }
 
-    .l-img {
-      position:absolute; inset:0; border-radius:50%;
-      overflow:hidden; display:flex; align-items:center; justify-content:center;
-      background:#0f0e18;
-    }
+    .l-img { position:absolute; inset:0; border-radius:50%; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#0f0e18; }
     .l-img img { width:100%; height:100%; object-fit:cover; }
 
     .ldot { position:absolute; width:6px; height:6px; border-radius:50%; }
@@ -179,55 +178,33 @@
       font-size:10px; font-weight:800; color:#fff;
       border:2px solid var(--dark); z-index:3;
       box-shadow:0 2px 12px rgba(26,86,219,.7);
-      letter-spacing:-.02em;
     }
 
-    .name-row {
-      margin-top:11px;
-      display:flex; align-items:center; gap:6px;
-    }
+    .name-row { margin-top:11px; display:flex; align-items:center; gap:6px; }
     .nr-line { width:20px; height:1px; }
     .nl1 { background:linear-gradient(90deg,transparent,var(--gold)); }
     .nl2 { background:linear-gradient(90deg,var(--gold),transparent); }
-    .nr-txt {
-      font-size:9px; font-weight:700; letter-spacing:.22em;
-      color:rgba(201,168,76,.45); text-transform:uppercase;
-    }
+    .nr-txt { font-size:9px; font-weight:700; letter-spacing:.22em; color:rgba(201,168,76,.45); text-transform:uppercase; }
 
-    .title-wrap {
-      text-align:center; margin-top:11px;
-      animation:fadeUp .5s .14s ease both;
-    }
-    .pre-lbl {
-      font-size:8px; font-weight:500;
-      letter-spacing:.40em; color:rgba(255,255,255,.22);
-      text-transform:uppercase; margin-bottom:4px;
-    }
-    h1 {
-      font-size:clamp(28px,7.5vw,62px);
-      font-weight:900; letter-spacing:.1em; line-height:1; color:#fff;
-      text-shadow:0 0 38px rgba(201,168,76,.25);
-    }
+    .title-wrap { text-align:center; margin-top:10px; animation:fadeUp .5s .14s ease both; }
+    .pre-lbl { font-size:8px; font-weight:500; letter-spacing:.40em; color:rgba(255,255,255,.22); text-transform:uppercase; margin-bottom:4px; }
+    h1 { font-size:clamp(28px,7.5vw,62px); font-weight:900; letter-spacing:.1em; line-height:1; color:#fff; text-shadow:0 0 38px rgba(201,168,76,.25); }
     h1 .n16 {
       background:linear-gradient(180deg, var(--gold3) 0%, var(--gold) 50%, var(--gold4) 100%);
-      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-      background-clip:text;
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
       filter:drop-shadow(0 0 16px rgba(201,168,76,.6));
     }
     h1 .xcl { color:rgba(255,255,255,.85); }
-    .sub-head {
-      font-size:clamp(9px,2vw,11px); font-weight:600;
-      letter-spacing:.32em; color:rgba(255,255,255,.28);
-      text-transform:uppercase; margin-top:5px;
-    }
+    .sub-head { font-size:clamp(9px,2vw,11px); font-weight:600; letter-spacing:.32em; color:rgba(255,255,255,.28); text-transform:uppercase; margin-top:5px; }
 
+    /* ── MARKET PAIRS BANNER ── */
     .ai-banner {
       display:flex; align-items:center; gap:10px;
       background:rgba(201,168,76,.07);
       border:1px solid var(--bdr);
       border-radius:10px; padding:9px 16px;
       width:100%; max-width:340px;
-      margin-top:12px;
+      margin-top:11px;
       animation:fadeUp .5s .22s ease both;
       position:relative; overflow:hidden;
     }
@@ -244,32 +221,32 @@
     @keyframes dotBlink { 0%,100%{opacity:1} 50%{opacity:.3} }
     .ab-live-txt { font-size:9px; font-weight:700; color:var(--gold2); letter-spacing:.08em; }
 
+    /* ── PAIRS GRID ── */
     .feat-grid {
       display:grid; grid-template-columns:repeat(3,1fr);
       gap:7px; width:100%; max-width:340px;
-      margin-top:11px;
+      margin-top:10px;
       animation:fadeUp .5s .30s ease both;
     }
     .fc {
       background:rgba(201,168,76,.06);
       border:1px solid rgba(201,168,76,.15);
-      border-radius:10px; padding:10px 5px; text-align:center;
+      border-radius:10px; padding:9px 5px; text-align:center;
       position:relative; overflow:hidden;
     }
-    .fc::before {
-      content:''; position:absolute; bottom:0; left:0; right:0; height:1.5px;
-      background:linear-gradient(90deg,transparent,var(--gold),transparent);
-    }
-    .fc-icon { font-size:18px; display:block; margin-bottom:3px; }
-    .fc-lbl  { font-size:8px; font-weight:700; color:rgba(255,255,255,.32); text-transform:uppercase; letter-spacing:.07em; line-height:1.3; }
+    .fc::before { content:''; position:absolute; bottom:0; left:0; right:0; height:1.5px; background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+    .fc-icon { font-size:16px; display:block; margin-bottom:2px; }
+    .fc-pair { font-size:9px; font-weight:800; color:var(--gold2); letter-spacing:.04em; display:block; }
+    .fc-lbl  { font-size:7.5px; font-weight:600; color:rgba(255,255,255,.25); text-transform:uppercase; letter-spacing:.06em; line-height:1.3; }
 
+    /* ── STATS ── */
     .stats-row {
       display:flex; align-items:stretch;
       background:rgba(201,168,76,.05);
       border:1px solid var(--bdr);
       border-radius:11px; overflow:hidden;
       width:100%; max-width:340px;
-      margin-top:11px;
+      margin-top:10px;
       animation:fadeUp .5s .38s ease both;
     }
     .sc { flex:1; padding:9px 5px; text-align:center; position:relative; }
@@ -280,39 +257,34 @@
     .sv-w { color:#fff; }
     .sc-l { font-size:7.5px; font-weight:700; color:rgba(255,255,255,.22); text-transform:uppercase; letter-spacing:.1em; margin-top:2px; }
 
+    /* ── INFO ROW ── */
     .info-row {
       display:flex; align-items:center; gap:10px;
       justify-content:center; width:100%;
-      margin-top:9px; flex-wrap:wrap;
+      margin-top:8px; flex-wrap:wrap;
       animation:fadeUp .5s .44s ease both;
     }
     .info-item { display:flex; align-items:center; gap:4px; font-size:9.5px; font-weight:600; color:rgba(255,255,255,.22); }
     .info-sep { width:3px; height:3px; border-radius:50%; background:var(--bdr); flex-shrink:0; }
 
-    .cta-wrap {
-      width:100%; max-width:340px;
-      margin-top:13px;
-      animation:fadeUp .5s .52s ease both;
-    }
+    /* ── CTA ── */
+    .cta-wrap { width:100%; max-width:340px; margin-top:12px; animation:fadeUp .5s .52s ease both; }
     .btn {
       position:relative; overflow:hidden;
       display:flex; align-items:center; justify-content:center; gap:10px;
       width:100%; padding:15px 28px; border-radius:10px;
       background:linear-gradient(135deg, var(--gold4), var(--gold), var(--gold2), var(--gold3));
-      background-size:200% auto;
-      color:#04030a;
+      background-size:200% auto; color:#04030a;
       font-family:'Poppins',sans-serif;
       font-weight:800; font-size:14px; letter-spacing:.12em;
-      text-transform:uppercase; text-decoration:none;
-      border:none; cursor:pointer;
+      text-transform:uppercase; text-decoration:none; border:none; cursor:pointer;
       box-shadow:0 6px 28px rgba(201,168,76,.40);
       animation:btnPulse 2.4s ease-in-out infinite, gSlide 3.5s linear infinite;
     }
     .btn::before {
       content:''; position:absolute; inset:0;
       background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);
-      transform:translateX(-100%);
-      animation:shimmer 2.6s ease-in-out infinite;
+      transform:translateX(-100%); animation:shimmer 2.6s ease-in-out infinite;
     }
     @keyframes shimmer { 0%{transform:translateX(-100%)} 55%,100%{transform:translateX(100%)} }
     @keyframes btnPulse {
@@ -324,115 +296,100 @@
     .tg { width:18px; height:18px; flex-shrink:0; }
     .tg path { fill:#04030a; }
 
-    .credit {
-      position:fixed; bottom:9px; left:0; right:0;
-      text-align:center; font-size:11px;
-      color:rgba(255,255,255,.16); z-index:100; letter-spacing:.03em;
-    }
+    .credit { position:fixed; bottom:9px; left:0; right:0; text-align:center; font-size:11px; color:rgba(255,255,255,.16); z-index:100; letter-spacing:.03em; }
     .credit a { color:var(--gold); text-decoration:none; font-weight:700; }
-    .credit a:hover { text-decoration:underline; }
 
-    @keyframes fadeUp {
-      from { opacity:0; transform:translateY(12px); }
-      to   { opacity:1; transform:translateY(0); }
-    }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
 
+    /* ── MOBILE ── */
     @media (max-width:480px) {
       html,body { overflow:hidden; }
-      .page { padding:13px 18px 24px; justify-content:center; gap:0; }
-      .hdr { margin-bottom:10px; }
+      .page { padding:12px 18px 22px; }
+      .tape-wrap { max-width:100%; margin-bottom:8px; }
+      .hdr { margin-bottom:8px; }
       .hdr-txt { font-size:8px; letter-spacing:.34em; }
       .hdr-line { max-width:30px; }
-      .logo-outer { width:106px; height:106px; }
+      .logo-outer { width:100px; height:100px; }
       .ai-badge { width:26px; height:26px; font-size:9px; }
-      .name-row { margin-top:10px; }
+      .name-row { margin-top:9px; }
       .nr-txt { font-size:8px; letter-spacing:.16em; }
-      .title-wrap { margin-top:10px; }
+      .title-wrap { margin-top:9px; }
       .pre-lbl { font-size:6.5px; letter-spacing:.28em; margin-bottom:3px; }
       h1 { font-size:clamp(26px,7.5vw,34px); }
       .sub-head { font-size:8.5px; letter-spacing:.24em; margin-top:4px; }
-      .ai-banner { margin-top:11px; max-width:100%; padding:8px 12px; border-radius:9px; }
+      .ai-banner { margin-top:9px; max-width:100%; padding:8px 12px; border-radius:9px; }
       .ab-icon { font-size:19px; }
-      .ab-txt b { font-size:11px; }
-      .ab-txt span { font-size:9.5px; }
-      .feat-grid { gap:6px; margin-top:10px; max-width:100%; }
-      .fc { padding:9px 4px; border-radius:9px; }
-      .fc-icon { font-size:16px; margin-bottom:3px; }
-      .fc-lbl { font-size:7.5px; }
-      .stats-row { margin-top:10px; max-width:100%; border-radius:10px; }
+      .ab-txt b { font-size:10.5px; }
+      .ab-txt span { font-size:9px; }
+      .feat-grid { gap:6px; margin-top:9px; max-width:100%; }
+      .fc { padding:8px 4px; border-radius:9px; }
+      .fc-icon { font-size:14px; margin-bottom:2px; }
+      .fc-pair { font-size:8.5px; }
+      .fc-lbl { font-size:7px; }
+      .stats-row { margin-top:9px; max-width:100%; border-radius:10px; }
       .sc { padding:8px 4px; }
       .sc-v { font-size:16px; }
       .sc-l { font-size:7px; }
-      .info-row { margin-top:8px; gap:7px; }
+      .info-row { margin-top:7px; gap:7px; }
       .info-item { font-size:9px; }
-      .cta-wrap { margin-top:12px; max-width:100%; padding:0 2px; }
+      .cta-wrap { margin-top:11px; max-width:100%; padding:0 2px; }
       .btn { font-size:13px; padding:14px 18px; letter-spacing:.1em; border-radius:10px; }
       .hex {
-        background-image:
-          radial-gradient(circle, rgba(201,168,76,0.10) 1.5px, transparent 1.5px),
-          radial-gradient(circle, rgba(201,168,76,0.05) 1px, transparent 1px);
-        background-size: 20px 20px, 10px 10px;
-        background-position: 0 0, 5px 5px;
-      }
-      .diag {
-        background-image: repeating-linear-gradient(
-          -45deg, transparent, transparent 26px,
-          rgba(201,168,76,0.038) 26px, rgba(201,168,76,0.038) 27px
-        );
+        background-image: radial-gradient(circle, rgba(201,168,76,0.10) 1.5px, transparent 1.5px), radial-gradient(circle, rgba(201,168,76,0.05) 1px, transparent 1px);
+        background-size: 20px 20px, 10px 10px; background-position: 0 0, 5px 5px;
       }
       .credit { font-size:10px; bottom:7px; }
     }
 
     @media (max-width:370px) {
-      .logo-outer { width:90px; height:90px; }
+      .logo-outer { width:88px; height:88px; }
       h1 { font-size:24px; }
       .sc-v { font-size:14px; }
-      .fc-icon { font-size:14px; }
-      .fc-lbl { font-size:7px; }
+      .fc-icon { font-size:13px; }
+      .fc-pair { font-size:7.5px; }
       .btn { font-size:12px; padding:13px 14px; }
-      .ai-banner { margin-top:9px; }
-      .feat-grid { margin-top:9px; }
-      .stats-row { margin-top:8px; }
-      .info-row { margin-top:7px; }
-      .cta-wrap { margin-top:10px; }
-      .title-wrap { margin-top:8px; }
+      .ai-banner,.feat-grid,.stats-row,.info-row,.cta-wrap { margin-top:7px; }
     }
 
+    /* ── LAPTOP ── */
     @media (min-width:768px) {
       .page { padding:20px 36px 26px; }
-      .hdr { margin-bottom:14px; }
+      .tape-wrap { max-width:420px; }
+      .hdr { margin-bottom:12px; }
       .hdr-txt { font-size:9.5px; letter-spacing:.44em; }
       .hdr-line { max-width:56px; }
       .logo-outer { width:120px; height:120px; }
       .ai-badge { width:30px; height:30px; font-size:11px; }
       .name-row { margin-top:12px; }
       .nr-txt { font-size:10px; letter-spacing:.24em; }
-      .title-wrap { margin-top:14px; }
+      .title-wrap { margin-top:13px; }
       .pre-lbl { font-size:8.5px; letter-spacing:.40em; margin-bottom:5px; }
       h1 { font-size:58px; }
       .sub-head { font-size:11px; letter-spacing:.32em; margin-top:6px; }
-      .ai-banner { max-width:420px; margin-top:14px; padding:11px 20px; border-radius:12px; }
+      .ai-banner,.feat-grid,.stats-row,.cta-wrap { max-width:420px; }
+      .ai-banner { margin-top:13px; padding:11px 20px; border-radius:12px; }
       .ab-icon { font-size:24px; }
       .ab-txt b { font-size:13px; }
       .ab-txt span { font-size:11px; }
-      .feat-grid { max-width:420px; gap:9px; margin-top:13px; }
-      .fc { padding:12px 7px; border-radius:12px; }
-      .fc-icon { font-size:22px; margin-bottom:5px; }
-      .fc-lbl { font-size:9.5px; }
-      .stats-row { max-width:420px; margin-top:13px; border-radius:13px; }
+      .feat-grid { gap:9px; margin-top:12px; }
+      .fc { padding:11px 7px; border-radius:12px; }
+      .fc-icon { font-size:20px; margin-bottom:3px; }
+      .fc-pair { font-size:10.5px; }
+      .fc-lbl { font-size:9px; }
+      .stats-row { margin-top:12px; border-radius:13px; }
       .sc { padding:11px 8px; }
       .sc-v { font-size:22px; }
       .sc-l { font-size:8.5px; margin-top:3px; }
-      .info-row { margin-top:12px; gap:14px; }
+      .info-row { margin-top:11px; gap:14px; }
       .info-item { font-size:11px; }
-      .cta-wrap { max-width:420px; margin-top:15px; }
+      .cta-wrap { margin-top:14px; }
       .btn { font-size:15px; padding:16px 34px; letter-spacing:.12em; border-radius:12px; }
     }
 
     @media (min-width:1200px) {
       .logo-outer { width:134px; height:134px; }
       h1 { font-size:70px; }
-      .ai-banner,.feat-grid,.stats-row,.cta-wrap { max-width:480px; }
+      .tape-wrap,.ai-banner,.feat-grid,.stats-row,.cta-wrap { max-width:480px; }
     }
   </style>
 </head>
@@ -454,10 +411,29 @@
 
   <main class="page">
 
+    <!-- Live Ticker Tape -->
+    <div class="tape-wrap">
+      <div class="tape">
+        <div class="ti"><span class="ti-p">EUR/USD</span><span class="ti-v">1.0842</span><span class="ti-u">▲0.12%</span></div>
+        <div class="ti"><span class="ti-p">GBP/USD</span><span class="ti-v">1.2674</span><span class="ti-d">▼0.08%</span></div>
+        <div class="ti"><span class="ti-p">XAU/USD</span><span class="ti-v">2341.5</span><span class="ti-u">▲0.34%</span></div>
+        <div class="ti"><span class="ti-p">USD/JPY</span><span class="ti-v">154.82</span><span class="ti-u">▲0.21%</span></div>
+        <div class="ti"><span class="ti-p">GBP/JPY</span><span class="ti-v">196.40</span><span class="ti-d">▼0.15%</span></div>
+        <div class="ti"><span class="ti-p">AUD/USD</span><span class="ti-v">0.6548</span><span class="ti-u">▲0.10%</span></div>
+        <!-- duplicate for seamless loop -->
+        <div class="ti"><span class="ti-p">EUR/USD</span><span class="ti-v">1.0842</span><span class="ti-u">▲0.12%</span></div>
+        <div class="ti"><span class="ti-p">GBP/USD</span><span class="ti-v">1.2674</span><span class="ti-d">▼0.08%</span></div>
+        <div class="ti"><span class="ti-p">XAU/USD</span><span class="ti-v">2341.5</span><span class="ti-u">▲0.34%</span></div>
+        <div class="ti"><span class="ti-p">USD/JPY</span><span class="ti-v">154.82</span><span class="ti-u">▲0.21%</span></div>
+        <div class="ti"><span class="ti-p">GBP/JPY</span><span class="ti-v">196.40</span><span class="ti-d">▼0.15%</span></div>
+        <div class="ti"><span class="ti-p">AUD/USD</span><span class="ti-v">0.6548</span><span class="ti-u">▲0.10%</span></div>
+      </div>
+    </div>
+
     <!-- Header -->
     <div class="hdr">
       <div class="hdr-line"></div>
-      <div class="hdr-txt">💹 &nbsp; AI Forex Signals &nbsp; 💹</div>
+      <div class="hdr-txt">💹 &nbsp; Forex Market Signals &nbsp; 💹</div>
       <div class="hdr-line"></div>
     </div>
 
@@ -465,9 +441,7 @@
     <a href="https://t.me/+_3WtynomYVZjYmY1" target="_blank" rel="noopener" class="logo-link">
       <div class="logo-section">
         <div class="logo-outer">
-          <div class="lr1"></div>
-          <div class="lr2"></div>
-          <div class="lr3"></div>
+          <div class="lr1"></div><div class="lr2"></div><div class="lr3"></div>
           <div class="l-img">
             <img
               src="https://onebyone.site/wp-content/uploads/2026/04/16club.jpg"
@@ -475,10 +449,8 @@
               onerror="this.style.display='none';this.parentElement.style.background='#0f0e18';this.parentElement.innerHTML='<span style=\'font-family:Poppins,sans-serif;font-size:18px;color:#c9a84c;font-weight:900\'>16X</span>'"
             />
           </div>
-          <div class="ldot ld1"></div>
-          <div class="ldot ld2"></div>
-          <div class="ldot ld3"></div>
-          <div class="ldot ld4"></div>
+          <div class="ldot ld1"></div><div class="ldot ld2"></div>
+          <div class="ldot ld3"></div><div class="ldot ld4"></div>
           <div class="ai-badge">AI</div>
         </div>
         <div class="name-row">
@@ -491,17 +463,17 @@
 
     <!-- Title -->
     <div class="title-wrap">
-      <div class="pre-lbl">— Elite AI Forex Club —</div>
+      <div class="pre-lbl">— Elite Forex Market Club —</div>
       <h1><span class="n16">16X</span><span class="xcl"> CLUB</span></h1>
-      <div class="sub-head">Forex · Gold · AI Signals</div>
+      <div class="sub-head">Forex · Gold · Currency · AI Signals</div>
     </div>
 
-    <!-- AI Banner -->
+    <!-- Banner -->
     <div class="ai-banner">
-      <span class="ab-icon">📡</span>
+      <span class="ab-icon">📊</span>
       <div class="ab-txt">
-        <b>AI Forex — EUR/USD · GBP/JPY · XAU/USD</b>
-        <span>Elite signals · Entry · SL · TP daily analysis</span>
+        <b>Forex Market — Entry · SL · TP Levels</b>
+        <span>EUR/USD · GBP/JPY · XAU/USD · Daily Analysis</span>
       </div>
       <div class="ab-live">
         <div class="ab-dot"></div>
@@ -509,19 +481,22 @@
       </div>
     </div>
 
-    <!-- Feature Cards -->
+    <!-- Currency Pair Cards -->
     <div class="feat-grid">
       <div class="fc">
-        <span class="fc-icon">💱</span>
-        <span class="fc-lbl">Forex<br/>Signals</span>
+        <span class="fc-icon">💶</span>
+        <span class="fc-pair">EUR/USD</span>
+        <span class="fc-lbl">Major<br/>Pair</span>
       </div>
       <div class="fc">
         <span class="fc-icon">🥇</span>
-        <span class="fc-lbl">Gold<br/>Calls</span>
+        <span class="fc-pair">XAU/USD</span>
+        <span class="fc-lbl">Gold<br/>Market</span>
       </div>
       <div class="fc">
-        <span class="fc-icon">⚡</span>
-        <span class="fc-lbl">Elite<br/>Setups</span>
+        <span class="fc-icon">💷</span>
+        <span class="fc-pair">GBP/JPY</span>
+        <span class="fc-lbl">Volatile<br/>Pair</span>
       </div>
     </div>
 
@@ -534,14 +509,14 @@
 
     <!-- Info -->
     <div class="info-row">
-      <div class="info-item">✅ Official Channel</div>
+      <div class="info-item">✅ Forex Market</div>
       <div class="info-sep"></div>
       <div class="info-item">🤖 AI Powered</div>
       <div class="info-sep"></div>
-      <div class="info-item">📈 Forex Club</div>
+      <div class="info-item">📈 Gold · Crypto</div>
     </div>
 
-    <!-- CTA — LINKED -->
+    <!-- CTA -->
     <div class="cta-wrap">
       <a href="https://t.me/+_3WtynomYVZjYmY1" target="_blank" rel="noopener" class="btn">
         <span class="btn-inner">
